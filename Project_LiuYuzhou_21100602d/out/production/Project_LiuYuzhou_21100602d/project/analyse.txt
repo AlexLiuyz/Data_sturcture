@@ -1,0 +1,11 @@
+Question 1:
+If we are not going to consider the time for counting the inner array inside of the two dimensional array, the time complexity is O(nlogn).
+Here I use a min heap two keep track of the length and the position of the subarray, what I I create an class called node to store the length and the array,then put the nodes into the heap, so the time complexity for build the heap is n.
+Then the root of the heap should be the min length among the whole array, after remove it, I also need to compare the current root with the result array, to see which one is the second shortest, then merge them. Then repeat the process, it takes nlogn.
+So the time complexity should be O(n)+O(nlogn)=O(nlogn)
+
+Question2:
+For sorting without using sorting algorithm, I get the hint from lecture note(hashset), but it doesn't work, because we cannot detect any data stored in it. So I used a boolean array to sort the data, just like restore the matrix, then use the same idea as Q1. I used node which contains the boolean array, position of the array, and the length of the array, then insert it into the main heap, the time complexity for this is O(n)(if we are not going to consider the time for traverse the whole matrix for input, that needs n^2).
+Then I just compare the root of the heap with its left child and right child, if same, just return the position, if not,just remove it. the time complexity of this should be O(nlogn,n is the size of the heap, which is the length of the input array(the outer length)).
+So all in all the time complexity should be O(n)+O(nlogn)=O(nlogn)(or if we are going to consider the time for traverse the whole array, then it will change to O(n^2))
+ 

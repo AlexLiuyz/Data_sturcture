@@ -1,1 +1,1 @@
-This is a individual project I did with cpp which can support the user create a social network, they can provide personal information to add to the system on their own. They can also build relationship between different persons and assign different person to different teams. 
+This is an individual project I did with cpp which can support the user create a social network, they can provide personal information to add to the system on their own. They can also build relationship between different persons and assign different person to different teams. 
